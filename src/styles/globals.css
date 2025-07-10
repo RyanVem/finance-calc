@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Mona+Sans:ital@0;1&display=swap');
+
+
+:root {
+  --background: #000000;
+  --foreground: #ffffff;
+  --gray-dark: #232323;
+  --gray-medium: #444444;
+  --gray-light: #666666;
+  --accent-blue: #476ffe;
+  --accent-yellow: #f3d74d;
+  --border-gray: #222222;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: "Mona Sans", sans-serif;
+}
+
+.centered-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.big-logo {
+  font-size: 3rem;
+  font-weight: 900;
+  letter-spacing: -1px;
+  margin-bottom: 2.5rem;
+  text-align: center;
+  color: var(--foreground);
+}
+
+.main-btn {
+  display: inline-block;
+  padding: 1rem 2.8rem;
+  font-size: 1.25rem;
+  font-weight: 700;
+  background: var(--accent-yellow);
+  color: #232323;
+  border-radius: 2rem;
+  border: none;
+  box-shadow: 0 4px 20px 0 #ffe15040;
+  text-decoration: none;
+  transition: background 0.2s, transform 0.15s, box-shadow 0.2s, color 0.15s;
+}
+.main-btn:hover,
+.main-btn:focus {
+  color: #181818;
+  transform: translateY(-2px) scale(1.04);
+  box-shadow: 0 8px 36px 0 #ffe15070;
+  outline: none;
+}
+
+/* — Optional styles for secondary/tertiary buttons for future use — */
+.secondary-btn {
+  border: 2rem solid var(--border-gray);
+  background: transparent;
+  color: var(--foreground);
+}
+.secondary-btn:hover {
+  background: var(--border-gray);
+}
+
+.tertiary-btn {
+  border: 2rem solid var(--accent-blue);
+  background: transparent;
+  color: var(--accent-blue);
+}
+.tertiary-btn:hover {
+  background: var(--accent-blue);
+  color: var(--background);
+}
+
+/* Footer */
+.main-footer {
+  width: 100%;
+  padding: 1.3rem 0 1.2rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--gray-dark);
+}
+.footer-link {
+  color: var(--gray-light);
+  display: flex;
+  align-items: center;
+  gap: 0.55em;
+  font-size: 1.04rem;
+  text-decoration: none;
+  transition: color 0.18s;
+}
+.footer-link:hover,
+.footer-link:focus {
+  color: var(--accent-blue);
+}

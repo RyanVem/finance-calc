@@ -1,0 +1,21 @@
+@import "tailwindcss";
+
+.centered-title-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.medium-logo {
+  font-size: 2.5rem;
+  font-weight: 900;
+  letter-spacing: -1px;
+  margin-bottom: 2.5rem;
+  text-align: center;
+  color: #e0e3ed;
+  text-shadow:
+    0 2px 16px #262c3d,
+    0 2px 20px #22262d44;
+}

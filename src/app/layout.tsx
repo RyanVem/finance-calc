@@ -1,6 +1,6 @@
 //import type { Metadata } from "next";
 //import { Geist, Geist_Mono } from "next/font/google";
-import "./globals.css";
+import "../styles/globals.css";
 
 /*
 const geistSans = Geist({
@@ -28,6 +28,16 @@ export default function RootLayout({
     <html lang="en">
       <body>
         {children}
+        <footer className="main-footer">
+          <a
+            href="https://github.com/RyanVem/finance-calc"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="footer-link"
+          >
+            <span>View on GitHub</span>
+          </a>
+        </footer>
       </body>
     </html>
   );
